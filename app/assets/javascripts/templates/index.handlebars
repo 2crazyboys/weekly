@@ -1,1 +1,8 @@
 <h1>Hello Ember</h1>
+{{#each controller}}
+  <p>{{name}}</p>
+{{/each}}
+
+{{view Ember.TextField valueBinding="name"}}
+
+<a {{action add}} >Adicionar!!!</a>
